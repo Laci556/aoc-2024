@@ -3,7 +3,7 @@ import gleam/float
 import gleam/int
 import gleam/io
 
-pub fn bechmark(fun: fn() -> a) {
+pub fn benchmark(fun: fn() -> a) {
   io.println("⏱️ Measuring...")
   let start = birl.monotonic_now()
   let res = fun()
